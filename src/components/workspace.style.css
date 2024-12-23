@@ -1,0 +1,201 @@
+.workspace-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  overflow: hidden;
+  padding: 16px;
+  margin: 16px;
+}
+
+.workspace-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.workspace-header h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+  max-width: 250px;
+}
+
+.location-badge {
+
+  background-color: #f3f3f3;
+  padding: 8px 8px;
+  font-size: 12px;
+  color: #555;
+  border-radius: 6px;
+}
+
+.location-icon {
+  width: 18px;
+  height: 18px;
+  padding: 0 8px;
+}
+
+.workspace-image {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 8px;
+}
+
+.workspace-image-cover {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.workspace-tag-container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: linear-gradient(to right, #263238, #2f4b59);
+  border: 1px solid #ffbb00;
+  color: #ffbb00;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.workspace-tag-icon {
+  width: 12px;
+  height: 12px;
+  margin-right: 4px;
+}
+
+.workspace-tag {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+}
+
+.workspace-button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.day-pass-button,
+.bulk-pass-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 48%;
+  position: relative;
+}
+
+.arrow-first {
+  opacity: 0.5; /* Lightest arrow */
+}
+
+.arrow-second {
+  opacity: 0.7; /* Medium arrow */
+}
+
+.arrow-third {
+  opacity: 1; /* Darkest arrow */
+}
+
+
+.bulk-pass-button {
+  background-color: var(--primary-btn-dark);
+}
+.day-pass-button:hover,
+.bulk-pass-button:hover {
+  background-color: #f9f9f9;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.day-pass-button 
+.bulk-pass-button  {
+  flex-grow: 1;
+}
+
+.day-pass-button span,
+.bulk-pass-button span {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+}
+
+
+
+.day-pass-button h3,
+.bulk-pass-button h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 4px 0 0 0;
+}
+
+.day-pass-button span,
+.bulk-pass-button span {
+  font-size: 12px;
+  color: #666;
+}
+
+.arrow-container {
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+}
+
+.arrow {
+  width: 12px;
+  height: 12px;
+  margin-right: -4px;
+}
+
+.discount-badge {
+  position: absolute;
+  top: -12px;
+  left: 32px;
+  background-color: var(--primary-text);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+/* Overview container */
+.overview-container {
+  margin: 16px 32px;
+  font-family: Arial, sans-serif;
+}
+
+.overview-container h1 {
+ margin: 24px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.workspace-list-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%; /* Three columns */
+  gap: 16px; /* Space between grid items */
+  padding: 16px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .workspace-list-container {
+    grid-template-columns: 100%; /* Single column */
+    padding: 0px;
+  }
+
+  .overview-container {
+    margin: 0px;
+  }
+}
+

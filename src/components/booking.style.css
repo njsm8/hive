@@ -1,0 +1,22 @@
+.tag-container {
+    padding: 6px 8px;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #263238 0%, #2F4B59 100%);
+    border: #FFBB00 0.45px solid;
+    color: #FFBB00;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+}
+
+.tag-text {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1.8px;
+    line-height: 0.8;
+}
+
+.tag-icon {
+  margin-bottom: -5px;
+  margin-right: 5px;
+}

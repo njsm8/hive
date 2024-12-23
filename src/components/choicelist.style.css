@@ -1,0 +1,94 @@
+.choice-section {
+    
+    padding: 80px 80px;
+    background-color: #f8f9fa; 
+}
+
+/* Heading styling */
+.choice-heading {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+}
+
+/* Grid layout for the choice list */
+.choice-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 30px; 
+    justify-items: start; 
+    margin-left: 16px;
+    padding-top: 32px;
+}
+
+/* Individual choice container */
+.choice-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+ 
+}
+
+/* Icon styling */
+.choice-icon {
+    width: 32px; 
+    height: 32px;
+    margin-bottom: 10px;
+}
+
+/* Text styling */
+.choice-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10px;
+    padding: 0px 16px;
+    line-height: 21px;
+}
+
+/* Responsive design for smaller screens */
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .choice-list {
+        grid-template-columns: repeat(2, 1fr); /* Ensure two equal-width columns */
+        gap: 12px; /* Add consistent spacing between items */
+        justify-items: center; /* Center align grid items */
+        padding: 0 8px; 
+        margin: 0px;/* Add padding to the grid */
+    }
+
+    .choice-section {
+        padding: 16px; /* Ensure proper padding for the section */
+    }
+
+    .choice-container {
+        display: flex;
+        flex-direction: column; /* Stack icon and text vertically */
+        align-items: center;
+        background-color: #fff; /* White background for boxes */
+        padding: 16px; /* Add internal spacing */
+        border-radius: 8px; /* Rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
+        width: 100%; /* Make boxes fill the column width */
+        max-width: 150px; /* Set a consistent width for each box */
+    }
+
+    .choice-text {
+        margin-top: 12px; /* Add spacing between the icon and text */
+        text-align: center;
+        padding: 0; /* Remove unnecessary padding */
+        line-height: 1.5; /* Adjust for better readability */
+    }
+}
+
+@media (max-width: 480px) {
+    .choice-list {
+        gap: 16px; /* Slightly reduce spacing */
+    }
+
+    .choice-container {
+        max-width: 80%; /* Ensure full width for smaller screens */
+    }
+}
