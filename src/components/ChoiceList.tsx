@@ -1,4 +1,12 @@
 import './choicelist.style.css';
+import community from '../assets/community.svg';
+import gym from '../assets/gym.svg';
+import wifi from '../assets/wifi.svg';
+import cafe from '../assets/cafe.svg';
+import affordable from '../assets/affordable.svg';
+import lounges from '../assets/lounges.svg';
+import booking from '../assets/booking.svg';
+import sportsArea from '../assets/sports-area.svg';
 
 type ChoiceProps = {
     iconName: string;
@@ -19,14 +27,14 @@ const Choice = ({ iconName, text }: ChoiceProps) => {
 };
 
 const Choices = [
-    { iconName: 'community.svg', text: 'Community Events' },
-    { iconName: 'gym.svg', text: 'Gym Facilities' },
-    { iconName: 'wifi.svg', text: 'High-Speed WiFi' },
-    { iconName: 'cafe.svg', text: 'Cafe & Tea Bar' },
-    { iconName: 'affordable.svg', text: 'Affordable' },
-    { iconName: 'lounges.svg', text: 'Comfort Lounges' },
-    { iconName: 'booking.svg', text: 'Quick Booking' },
-    { iconName: 'sports-area.svg', text: 'Sports Area' },
+    { iconName: community, text: 'Community Events' },
+    { iconName: gym, text: 'Gym Facilities' },
+    { iconName: wifi, text: 'High-Speed WiFi' },
+    { iconName: cafe, text: 'Cafe & Tea Bar' },
+    { iconName: affordable, text: 'Affordable' },
+    { iconName: lounges, text: 'Comfort Lounges' },
+    { iconName: booking, text: 'Quick Booking' },
+    { iconName: sportsArea, text: 'Sports Area' },
 ];
 
 const ChoiceList = () => {

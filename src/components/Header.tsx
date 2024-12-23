@@ -1,10 +1,12 @@
 import './header.style.css';
+import headerlogo from '../assets/header-logo.svg';
+import call from '../assets/call.svg';
 
 const Header = () => {
     return (
         <header>
-            <img className="header-logo" src="src/assets/header-logo.svg" alt="Logo" />
-            <img className="header-call" src="src/assets/call.svg" alt="Call" />
+            <img className="header-logo" src={headerlogo} alt="Logo" />
+            <img className="header-call" src={call} alt="Call" />
         </header>
     );
 }

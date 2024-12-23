@@ -77,17 +77,17 @@ const WorkspaceCard: React.FC<WorkspaceCardProps> = (props) => {
           <div className="arrow-container">
             <img
               className="arrow arrow-first"
-              src={"src/assets/arrow.svg"}
+              src={arrowIcon}
               alt="Arrow"
             />
             <img
               className="arrow arrow-second"
-              src={"src/assets/arrow.svg"}
+              src={arrowIcon}
               alt="Arrow"
             />
             <img
               className="arrow arrow-third"
-              src={"src/assets/arrow.svg"}
+              src={arrowIcon}
               alt="Arrow"
             />
           </div>
