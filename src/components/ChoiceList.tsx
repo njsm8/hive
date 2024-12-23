@@ -17,7 +17,7 @@ const Choice = ({ iconName, text }: ChoiceProps) => {
     return (
         <div className="choice-container">
             <img
-                src={`src/assets/${iconName}`}
+                src={iconName}
                 alt={text}
                 className="choice-icon"
             />
